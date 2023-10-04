@@ -875,6 +875,22 @@ h3 {
     margin-top: 30px;
   }
 }
+.section-6 .beige-box-position {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .section-6 .beige-box-position {
+    display: flex;
+    justify-content: end;
+  }
+}
+.section-6 .beige-box-position .beige-box {
+  height: 425px;
+  width: 56%;
+  background-color: #f0efe9;
+  position: absolute;
+  top: 260px;
+}
 
 /* Projects */
 .section-7 {
@@ -1470,4 +1486,102 @@ h3 {
     z-index: 3;
     bottom: 80px;
   }
+}
+
+/* ---------Contact.html---------- */
+/* Let's Connect */
+.part-1 {
+  background-color: #f0efe9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.part-1 .lets-connect {
+  display: flex;
+  justify-content: center;
+}
+.part-1 .lets-connect .lets-connect-box {
+  text-align: center;
+}
+.part-1 .lets-connect .lets-connect-box .p-topics {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.part-1 .lets-connect .lets-connect-box .p-topics p {
+  font-weight: 300;
+}
+.part-1 .lets-connect .lets-connect-box .p-topics .medium-p {
+  font-weight: 500;
+}
+.part-1 .lets-connect .lets-connect-box h1 {
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 1200px) {
+  .part-1 .lets-connect .lets-connect-box h1 {
+    font-size: 70px;
+  }
+}
+.part-1 img {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .part-1 img {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+.part-2 {
+  margin-top: 115px;
+}
+.part-2 .contacts {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .part-2 .contacts .contacts-positioning {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1500px) {
+  .part-2 .contacts .contacts-positioning {
+    gap: 30px;
+  }
+}
+.part-2 .contacts .contacts-positioning .contact-box-border {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #96948d;
+  height: 206px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+@media (min-width: 450px) {
+  .part-2 .contacts .contacts-positioning .contact-box-border {
+    width: 420px;
+  }
+}
+.part-2 .contacts .contacts-positioning .contact-box-border .invinsable-box {
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+}
+.part-2 .contacts .contacts-positioning .contact-box-border .invinsable-box .round-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #191919;
+}
+.part-2 .contacts .contacts-positioning .contact-box-border .invinsable-box .information-contact h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.part-2 .contacts .contacts-positioning .contact-box-border .invinsable-box .information-contact p {
+  font-size: 18px;
 }
