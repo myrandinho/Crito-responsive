@@ -352,6 +352,12 @@ h3 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.section-3 .grey-border-box {
+  height: auto;
+  width: 80%;
+  border: 1px solid black;
+  padding-bottom: 50px;
+}
 .section-3 .features-box {
   text-align: center;
 }
@@ -392,13 +398,22 @@ h3 {
     align-items: center;
     justify-content: center;
     height: 60px;
-    width: 460px;
+    width: 380px;
     border-radius: 25px;
     text-decoration: none;
     color: black;
     margin-bottom: 10px;
     font-weight: 400;
-    margin-right: 140px;
+    margin-right: 40px;
+  }
+  .section-3 .features-box .left-box .yellow-button:hover {
+    background-color: black;
+    color: #ffffff;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1400px) {
+  .section-3 .features-box .left-box .yellow-button {
+    margin-right: 150px;
   }
 }
 .section-3 .features-box .right-box {
@@ -430,7 +445,7 @@ h3 {
 .section-3 .features-box .right-box p {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1030px) {
   .section-3 .features-box .right-box p {
     display: block;
     font-size: 16px;
@@ -460,22 +475,6 @@ h3 {
 }
 .section-3 .features-box .risk-management {
   grid-area: "RM";
-}
-.section-3 .grey-border-box {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .section-3 .grey-border-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .section-3 .grey-border-box .the-box {
-    border: 1px solid #cac6c6;
-    width: 1520px;
-    height: 600px;
-  }
 }
 
 /* About Company */
@@ -843,6 +842,9 @@ h3 {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .section-6 .why-choose-us .why-choose-us-info .logo-and-text h3 {
+    font-size: 22px;
+  }
 }
 .section-6 .why-choose-us .why-choose-us-info .logo-and-text .circle-logo {
   display: block;
@@ -860,7 +862,7 @@ h3 {
   }
 }
 .section-6 .why-choose-us .picture-on-box {
-  z-index: 1;
+  position: relative;
 }
 .section-6 .why-choose-us .picture-on-box img {
   display: none;
@@ -868,24 +870,10 @@ h3 {
 @media (min-width: 1200px) {
   .section-6 .why-choose-us .picture-on-box img {
     display: block;
+    z-index: 2;
+    position: relative;
+    margin-top: 30px;
   }
-}
-.section-6 .beige-box-position {
-  display: none;
-  justify-content: end;
-  align-items: end;
-}
-@media (min-width: 1620px) {
-  .section-6 .beige-box-position {
-    display: flex;
-  }
-}
-.section-6 .beige-box-position .beige-box {
-  background-color: #f0efe9;
-  height: 425px;
-  width: 1057px;
-  position: absolute;
-  bottom: 40px;
 }
 
 /* Projects */
@@ -979,6 +967,11 @@ h3 {
   background-color: #191919;
   color: #ffffff;
 }
+.section-7 .Project-section .projects-button .yellow-button:hover {
+  background-color: #ffffff;
+  color: #191919;
+  border: 1px solid #191919;
+}
 @media (min-width: 1200px) {
   .section-7 .Project-section .projects-button .yellow-button {
     height: 55px;
@@ -1023,6 +1016,10 @@ h3 {
 .section-8 .meet-our-team .team-box .h2-and-btn .btn-placement .yellow-button {
   border: 1px solid #191919;
   background-color: #f3d68c;
+}
+.section-8 .meet-our-team .team-box .h2-and-btn .btn-placement .yellow-button:hover {
+  background-color: #191919;
+  color: #ffffff;
 }
 @media (min-width: 1200px) {
   .section-8 .meet-our-team .team-box .h2-and-btn .btn-placement .yellow-button {
@@ -1175,6 +1172,11 @@ h3 {
 .section-9 .client-reviews .projects-button2 .yellow-button {
   background-color: #191919;
   color: #ffffff;
+  border: 1px solid #191919;
+}
+.section-9 .client-reviews .projects-button2 .yellow-button:hover {
+  background-color: #ffffff;
+  color: #191919;
 }
 @media (min-width: 1200px) {
   .section-9 .client-reviews .projects-button2 .yellow-button {
@@ -1235,6 +1237,10 @@ h3 {
   background-color: #ffffff;
   border: 1px solid #191919;
 }
+.section-10 .Article-and-news .text-h2-and-button .Topic-and-button .article-btn-position .yellow-button:hover {
+  background-color: #191919;
+  color: #ffffff;
+}
 @media (min-width: 1200px) {
   .section-10 .Article-and-news .text-h2-and-button .Topic-and-button .article-btn-position .yellow-button {
     height: 55px;
@@ -1265,6 +1271,10 @@ h3 {
   .section-10 .Article-and-news .crito-articles .article-and-info p {
     display: block;
   }
+}
+.section-10 .Article-and-news .crito-articles .article-and-info a {
+  text-decoration: none;
+  color: black;
 }
 .section-10 .Article-and-news .small-circles {
   display: none;
@@ -1317,6 +1327,11 @@ h3 {
 .section-11 .submit-your-mail .empty-field-and-subscribe-btn .button-position-center .yellow-button {
   width: 310px;
   margin-top: 20px;
+}
+.section-11 .submit-your-mail .empty-field-and-subscribe-btn .button-position-center .yellow-button:hover {
+  background-color: #191919;
+  color: #ffffff;
+  border: 1px solid #191919;
 }
 @media (min-width: 1200px) {
   .section-11 .submit-your-mail .empty-field-and-subscribe-btn .button-position-center .yellow-button {

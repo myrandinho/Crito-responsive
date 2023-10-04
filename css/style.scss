@@ -413,9 +413,19 @@ z-index: 0;
 
 /* Features */
 .section-3 {
-
+    
     padding-top: 100px;
     padding-bottom: 100px;
+
+    .grey-border-box {
+        height: auto;
+        width: 80%;
+        border: 1px solid black;
+        padding-bottom: 50px;
+        
+    
+    }
+    
     
 
     .features-box {
@@ -467,13 +477,24 @@ z-index: 0;
                     align-items: center;
                     justify-content: center;
                     height: 60px;
-                    width: 460px;
+                    width: 380px;
                     border-radius: 25px;
                     text-decoration: none;
                     color: black;
                     margin-bottom: 10px;
                     font-weight: 400;
-                    margin-right: 140px;
+                    margin-right: 40px;
+
+                    &:hover {
+                        background-color: black;
+                        color: #ffffff;
+                    }
+
+                    @media (min-width: 1400px) {
+                        margin-right: 150px;
+                    }
+
+                    
 
                   
                 }
@@ -511,9 +532,10 @@ z-index: 0;
             p {
                 display: none;
 
-                @media (min-width: 768px) {
+                @media (min-width: 1030px) {
                     display: block;
                     font-size: 16px;
+                    
                 }
             }
 
@@ -560,39 +582,10 @@ z-index: 0;
 
                
             }
-    }
+    } 
 
-
-
-
-    .grey-border-box {
-
-        
-        display: none;
-
-        @media (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        
-        
-      
-        
-
-        .the-box {
-            border: 1px solid #cac6c6;
-            width: 1520px;
-            height: 600px;
-        }
-
-        }
-        
-        
-}
-}
- 
-
+    
+}       
 
 /* About Company */
 .section-4 {
@@ -1026,6 +1019,7 @@ z-index: 0;
     
                 @media (min-width: 1200px) {
                     display: block;
+                    
                 }
                
                 
@@ -1060,6 +1054,10 @@ z-index: 0;
                     padding-left: 0px;
                     padding-right: 0px;
 
+                    h3 {
+                        font-size: 22px;
+                    }
+
                 }
 
                 .circle-logo {
@@ -1086,42 +1084,29 @@ z-index: 0;
        
 
         .picture-on-box {
-            z-index: 1;
-          
+            position: relative;
+            
+        
+
             img {
                 display: none;
 
                 @media (min-width: 1200px) {
                     display: block;
+                    z-index: 2;
+                    position: relative;
+                    margin-top: 30px;
+                    
+                    
                 }
             }
 
-        }
-    }
-
-    .beige-box-position {
-        display: none;
-        justify-content: end;
-        align-items: end;
-
-        @media (min-width: 1620px) {
-            display: flex;
-        }
-
-       
-
-        .beige-box {
-            background-color: #f0efe9;
-            height: 425px;
-            width: 1057px;
-            position: absolute;
-            bottom: 40px;
-
-          
-
             
+
         }
     }
+
+    
 
 }
 
@@ -1143,9 +1128,6 @@ z-index: 0;
                 font-size: 45px;
             }
            }
-
-            
-
 
         }
         
@@ -1238,6 +1220,12 @@ z-index: 0;
                 background-color: #191919;
                 color: #ffffff;
 
+                &:hover {
+                    background-color:#ffffff;
+                    color: #191919;
+                    border: 1px solid #191919;
+                }
+
                 @media (min-width: 1200px) {
 
                         height: 55px;
@@ -1291,6 +1279,11 @@ z-index: 0;
                     .yellow-button {
                         border: 1px solid #191919;
                         background-color: #f3d68c;
+
+                        &:hover {
+                            background-color: #191919;
+                            color: #ffffff;
+                        }
 
                         @media (min-width:1200px) {
                             height: 55px;
@@ -1503,6 +1496,12 @@ z-index: 0;
             .yellow-button {
                 background-color: #191919;
                 color: #ffffff;
+                border: 1px solid #191919;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #191919;
+                }
 
                     @media (min-width:1200px) {
                     height: 55px;
@@ -1573,6 +1572,11 @@ z-index: 0;
                         background-color: #ffffff;
                         border: 1px solid #191919;
 
+                        &:hover {
+                            background-color: #191919;
+                            color: #ffffff;
+                        }
+
                         @media (min-width: 1200px) {
 
                             height: 55px;
@@ -1616,6 +1620,11 @@ z-index: 0;
                         display: block;
                         
                     }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
                 }
 
             }
@@ -1685,6 +1694,12 @@ z-index: 0;
 
                     width: 310px;
                     margin-top: 20px;
+
+                    &:hover {
+                        background-color: #191919;
+                        color: #ffffff;
+                        border: 1px solid #191919;
+                    }
 
                     @media (min-width:1200px) {
 
